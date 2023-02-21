@@ -9,4 +9,20 @@
 * [FedSynth: Gradient Compression via Synthetic Data in Federated Learning](https://arxiv.org/pdf/2204.01273.pdf)
 * [Distilled One-Shot Federated Learning](https://arxiv.org/pdf/2009.07999.pdf)
 * [DYNAFED: Tackling Client Data Heterogeneity with Global Dynamics](https://arxiv.org/pdf/2211.10878.pdf)
+### Data-Distillation
+* [Private Set Generation with Discriminative Information](https://arxiv.org/pdf/2211.04446.pdf)
+  * Class-agnostic distillation and DP
+  * one round distillation
+
+### Data-Distillation for FL
 * [Fed-GLOSS-DP: Federated, Global Learning using Synthetic Sets with Record Level Differential Privacy](https://arxiv.org/pdf/2302.01068.pdf)
+  * Class-agnostic distillation and record-level DP
+  * multiple-round FL
+  * privacy-preserving learning that uses synthetic data to train federated models
+  * simulate the global optimization by transmitting a small set of synthetic samples that reflect the local loss landscapes
+  * (Eq. 13) w_k that is sufficiently close to the initial point of the local update, NTK condition, no change + always in the right direction => novelty
+    * NTK network doesn't need to be shared / has to be uniform?
+    
+  Questions
+    * the weights are synchronized/ communicated between client and central. no DP leak as its sanitized
+    * minimizing the distance between gradients => NTK? MMD
