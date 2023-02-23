@@ -6,6 +6,7 @@
   * DP via clipped gradient and GM 
 
 ## Data-Distillation
+* [Data-Distillation survey](https://arxiv.org/pdf/2301.04272.pdf)
 * [Private Set Generation with Discriminative Information](https://arxiv.org/pdf/2211.04446.pdf)
   * Class-agnostic distillation and DP
   * one round distillation
