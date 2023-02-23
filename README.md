@@ -7,7 +7,9 @@
   * Performance, Efficiency, Transferability.
   * NTK of a given neural network, is equivalent to training the same ∞-width neural network with L2 reconstruction loss for ∞ SGD-steps
   * Meta-model Matching: RFAD proposes NNGP: lightweight + can be DP
-  * Gradient Matching:
+  * Gradient Matching: vanishing network gradients?
+  * Trajectory Matching
+  * Distribution Matching
 * [Private Set Generation with Discriminative Information](https://arxiv.org/pdf/2211.04446.pdf)
   * Class-agnostic distillation and DP
   * one round distillation
