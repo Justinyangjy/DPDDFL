@@ -1,12 +1,13 @@
 # Differentially Private Data Distillation Federated Learning Literature Review
 
-## Distribution Matching
-
-* [FedDM: Iterative Distribution Matching for Communication-Efficient Federated Learning](https://arxiv.org/pdf/2207.09653.pdf)
-  * DP via clipped gradient and GM 
 
 ## Data-Distillation
 * [Data-Distillation survey](https://arxiv.org/pdf/2301.04272.pdf)
+![Data-Distillation Overview](./img/optimization-1.png)
+  * Performance, Efficiency, Transferability.
+  * NTK of a given neural network, is equivalent to training the same ∞-width neural network with L2 reconstruction loss for ∞ SGD-steps
+  * Meta-model Matching: RFAD proposes NNGP: lightweight + can be DP
+  * Gradient Matching:
 * [Private Set Generation with Discriminative Information](https://arxiv.org/pdf/2211.04446.pdf)
   * Class-agnostic distillation and DP
   * one round distillation
@@ -55,3 +56,8 @@
   Questions
     * the weights are synchronized/ communicated between client and central. A: no DP leak as its sanitized
     * minimizing the distance between gradients => NTK? MMD
+
+### Distribution Matching
+
+* [FedDM: Iterative Distribution Matching for Communication-Efficient Federated Learning](https://arxiv.org/pdf/2207.09653.pdf)
+  * DP via clipped gradient and GM 
