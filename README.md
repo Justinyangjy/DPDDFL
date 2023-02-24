@@ -10,6 +10,13 @@
   * Gradient Matching: vanishing network gradients?
   * Trajectory Matching
   * Distribution Matching
+  * Factorization: bases + hallucinators
+  * KIP(∞-Conv) is best performance so far
+  * Data distillation, on the other hand, alleviates the need to synchronize large parametric models across clients and servers, by synchronizing tiny synthesized data summaries to the central server instead.
+  * the entire training happens only on the central server.
+  * scaling issues? [DC-BENCH:Dataset Condensation Benchmark](https://arxiv.org/pdf/2207.09639.pdf)
+* [No Free Lunch in "Privacy for Free: How does Dataset Condensation Help Privacy"](https://arxiv.org/pdf/2209.14987.pdf)
+  * Not privacy for free
 * [Private Set Generation with Discriminative Information](https://arxiv.org/pdf/2211.04446.pdf)
   * Class-agnostic distillation and DP
   * one round distillation
